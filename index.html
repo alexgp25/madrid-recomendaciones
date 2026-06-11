@@ -38,6 +38,10 @@ h2{
     margin:15px 0;
     border-radius:12px;
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp 0.6s ease forwards;
+    transition:all .3s ease;
 }
 
 a{
@@ -47,6 +51,35 @@ a{
 
 a:hover{
     text-decoration:underline;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.btn-maps{
+    display:inline-block;
+    margin-top:12px;
+    background:#1a73e8;
+    color:white !important;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:all .3s ease;
+}
+
+.btn-maps:hover{
+    background:#1558b0;
+    transform:scale(1.05);
 }
 
 .footer{
@@ -62,6 +95,10 @@ a:hover{
 
 <header>
 <h1> Mis recomendaciones favoritas de Madrid</h1>
+
+<p style="font-size:1.1em;color:#666;">
+Recomendaciones personales de un conductor local 🚖
+</p>
 
 <p>
 Hola, soy Alejandro.
@@ -88,7 +125,7 @@ Ver ubicación
 <div class="card">
 <h3>La Mamona</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Uno de esos sitios donde se mezclan buena gastronomía, terraza y ambiente animado. Muy recomendable para una comida tranquila que se alarga con una copa después. La tortilla y la tarta de queso suelen estar entre los platos más comentados por quienes repiten.
 </p>
 <a href="https://maps.google.com/?q=Calle+de+Ponzano+7+Madrid" target="_blank">Ver ubicación</a>
 </div>
@@ -96,7 +133,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>Beiruti</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Mi recomendación para quien quiera probar auténtica cocina libanesa. Hummus, shawarma, falafel y platos tradicionales preparados con mucho cuidado. Una opción diferente y muy recomendable cerca de Chamartín.
 </p>
 <a href="https://maps.google.com/?q=Calle+del+Padre+Claret+3+Madrid" target="_blank">Ver ubicación</a>
 </div>
@@ -104,7 +141,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>Bresca Malasaña</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Restaurante moderno en pleno Malasaña con una propuesta gastronómica cuidada y ambiente muy agradable. Destacan especialmente sus pizzas artesanas, pastas y postres. Perfecto para una cena tranquila en una de las zonas con más personalidad de Madrid.
 </p>
     <a href="https://maps.google.com/?q=Calle+de+Fuencarral+105+Madrid" target="_blank">Ver ubicación</a>
 
@@ -113,7 +150,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>Restaurante Botín</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Considerado uno de los restaurantes más antiguos del mundo. Famoso por su cochinillo y cordero asados en horno de leña tradicional. Una parada imprescindible para quienes quieren vivir la gastronomía más histórica de Madrid.
 </p>
     <a href="https://maps.google.com/?q=Calle+de+Cuchilleros+17+Madrid" target="_blank">Ver ubicación</a>
 
@@ -122,7 +159,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>Comic Planet</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Restaurante temático inspirado en el universo de los cómics y superhéroes. Muy conocido por sus hamburguesas, entrantes americanos y decoración espectacular. Ideal para familias y amantes de la cultura geek.
 </p>
     <a href="https://maps.google.com/?q=Avenida+de+Alberto+Alcocer+5+Madrid" target="_blank">Ver ubicación</a>
 
@@ -131,7 +168,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>A Brasa Moraleja</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Especializado en carnes a la brasa de gran calidad. Destacan los cortes premium, el buen producto y un ambiente elegante pero relajado. Perfecto para una comida especial o una cena diferente.
 </p>
     <a href="https://maps.google.com/?q=Plaza+de+la+Moraleja+Calle+de+la+Estafeta+2+Alcobendas" target="_blank">Ver ubicación</a>
 
@@ -140,7 +177,7 @@ Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño
 <div class="card">
 <h3>Honest Greens</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Uno de mis favoritos para comer saludable en Madrid. Ingredientes frescos, platos equilibrados y mucho sabor. Ideal para quienes buscan una opción ligera sin renunciar a una buena comida.
 </p>
     <a href="https://maps.google.com/?q=Gran+Via+7+Madrid" target="_blank">Ver ubicación</a>
 
@@ -160,7 +197,7 @@ Bar tradicional donde disfrutar de tapas generosas y ambiente auténticamente ma
 <div class="card">
 <h3>Sapama</h3>
 <p>
-Bar tradicional donde disfrutar de tapas generosas y ambiente auténticamente madrileño.
+Restaurante de barrio muy apreciado por su cocina casera, tapas abundantes y trato cercano. Una opción auténtica para quienes buscan comer como un madrileño más.
 </p>
     <a href="https://maps.google.com/?q=Calle+de+Jose+del+Hierro+60+Madrid" target="_blank">Ver ubicación</a>
 </div>
@@ -168,7 +205,7 @@ Bar tradicional donde disfrutar de tapas generosas y ambiente auténticamente ma
 <div class="card">
 <h3>La Boulé</h3>
 <p>
-Bar tradicional donde disfrutar de tapas generosas y ambiente auténticamente madrileño.
+Conocido especialmente por su tortilla de patatas, una de las más recomendadas por quienes la prueban. También destacan sus raciones y ambiente cercano.
 </p>
     <a href="https://maps.google.com/?q=Calle+de+Emilio+Vargas+11+Madrid" target="_blank">Ver ubicación</a>
 </div>
@@ -202,7 +239,7 @@ Pequeño, acogedor y con muy buen café. Ideal para una pausa tranquila durante 
 <div class="card">
 <h3>Juan Valdez</h3>
 <p>
-Una apuesta segura para disfrutar del café colombiano en pleno Madrid.
+Una apuesta segura para disfrutar del auténtico café colombiano. Cafés de calidad, repostería y un ambiente agradable para hacer una pausa durante el día.
 </p>
     <a href="https://www.google.com/maps/search/Juan+Valdez+La+Castellana+Madrid" target="_blank">Ver ubicación</a>
     
@@ -211,7 +248,7 @@ Una apuesta segura para disfrutar del café colombiano en pleno Madrid.
 <div class="card">
 <h3>Explora Family Café</h3>
 <p>
-Otro de mis favoritos para familias con niños pequeños. Espacio pensado para que todos disfruten de la experiencia.
+Espacio pensado para que padres e hijos disfruten juntos. Mientras los niños juegan, los adultos pueden relajarse con un café o una merienda en un entorno acogedor.
 </p>
     <a href="https://maps.google.com/?q=Calle+del+Poeta+Joan+Maragall+13+Madrid" target="_blank">
 Ver ubicación
@@ -251,7 +288,7 @@ Perfecto para familias. Mientras los niños juegan, los adultos pueden disfrutar
 <div class="card">
 <h3>Storyland</h3>
 <p>
-Espacio pensado para que los niños jueguen, exploren y se lo pasen en grande.
+Un espacio mágico pensado para familias con niños. Actividades, juegos y un ambiente creativo que convierte cada visita en una experiencia diferente.
 </p>
     <a href="https://maps.google.com/?q=Calle+de+la+Cava+Alta+12+Madrid" target="_blank">
 Ver ubicación
@@ -261,7 +298,7 @@ Ver ubicación
 <div class="card">
 <h3>Comic Planet</h3>
 <p>
-Un clásico de Chamberí para disfrutar de raciones, tapas y ambiente madrileño. Ideal tanto para un aperitivo como para una comida informal con amigos. Destacan especialmente sus tortillas, croquetas y platos para compartir.
+Restaurante temático inspirado en el universo de los cómics y superhéroes. Muy conocido por sus hamburguesas, entrantes americanos y decoración espectacular. Ideal para familias y amantes de la cultura geek.
 </p>
     <a href="https://maps.google.com/?q=Avenida+de+Alberto+Alcocer+5+Madrid" target="_blank">Ver ubicación</a>
 
@@ -304,7 +341,7 @@ Ver ubicación
 <div class="card">
 <h3>Mercado de San Anton</h3>
 <p>
-Uno de los mercados más interesantes de Madrid para tapear, comer o simplemente disfrutar del ambiente.
+Uno de los mercados gastronómicos más populares de Madrid. Ideal para tapear, probar diferentes propuestas culinarias y disfrutar del ambiente de Chueca.
 </p>
     <a href="https://www.google.com/maps/search/Mercado+de+San+Anton+Madrid" target="_blank">
 Ver ubicación
@@ -314,7 +351,7 @@ Ver ubicación
 <div class="card">
 <h3>La Fresería</h3>
 <p>
-Un rincón diferente para los amantes de las fresas y los postres. Muy popular entre quienes buscan algo dulce y fotogénico.
+El lugar perfecto para los amantes de las fresas con chocolate y los postres visuales. Muy popular entre turistas y residentes que buscan algo dulce y diferente.
 </p>
         <a href="https://www.google.com/maps/search/La+Freseria+Madrid" target="_blank">
 Ver ubicación
